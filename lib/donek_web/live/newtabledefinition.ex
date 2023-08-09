@@ -7,8 +7,8 @@ defmodule DonekWeb.NewTableDefinitionLive do
 
   def render(assigns) do
     ~H"""
-    <header>New Table Definition</header>
-    <section class="table_definition">
+    <header class="font-mono uppercase text-4xl font-bold text-center text-green-500 w-full">New Table Definition</header>
+    <div class="columns-2 font-mono py-4">
     <div>
       <label for="table_name">Table Name</label>
       <input id="table_name" type="text" />
@@ -17,13 +17,11 @@ defmodule DonekWeb.NewTableDefinitionLive do
       <label for="table_description">Table Description</label>
       <input id="table_description" type="text" />
     </div>
-    </section>
-    <section class="field_definitions">
     <div>
       <label for="field_name">Field Name</label>
       <input id="field_name" type="text" />
     </div>
-    </section>
+    </div>
     """
   end
 end
